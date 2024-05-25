@@ -38,8 +38,8 @@ echo ""
 echo "Installing wheel package..."
 pip install wheel
 echo ""
-echo "Installing packages from requirements_versions.txt..."
-pip install -r requirements_versions.txt
+echo "Installing packages from requirements.txt..."
+pip install -r requirements.txt
 echo ""
 echo "Uninstalling torch/xformers related packages, if necessary... "
 pip uninstall torch torchvision torchaudio torchtext functorch xformers -y
