@@ -13,7 +13,7 @@ echo "*     This installer will create a customized start script by using the in
 echo ""
 echo "Press enter to continue the installation..."
 read go
-sudo pacman -S intel-compute-runtime intel-graphics-compiler ocl-icd opencl-headers
+sudo pacman -S intel-compute-runtime intel-graphics-compiler ocl-icd opencl-headers --needed
 echo ""
 echo "What is the FULL PATH of directory where you want to install \"roopUL-IntelArc-ArchLinux\"?"
 echo "---Exclude the trailing \"/\"---"
