@@ -41,13 +41,6 @@ echo ""
 echo "Installing packages from requirements.txt..."
 pip install -r requirements.txt
 echo ""
-echo "Uninstalling torch/xformers related packages, if necessary... "
-pip uninstall torch torchvision torchaudio torchtext functorch xformers -y
-echo ""
-echo "Installing INTEL versions of torch, transformers extensions, and oneAPI packages..."
-pip install mkl-devel-dpcpp dpctl intel-extension-for-transformers
-pip install torch==2.1.0.post2 torchvision==0.16.0.post2 torchaudio==2.1.0.post2 intel-extension-for-pytorch==2.1.30+xpu oneccl_bind_pt==2.1.300+xpu --extra-index-url https://pytorch-extension.intel.com/release-whl/stable/xpu/us/
-echo ""
 echo "Creating the base start file (roopUL-Start.sh)"
 touch $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.sh
 echo "#!/usr/bin/env bash" > $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.sh
