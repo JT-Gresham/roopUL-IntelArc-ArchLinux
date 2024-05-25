@@ -47,7 +47,7 @@ echo "#!/usr/bin/env bash" > $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.
 echo "" >> $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.sh
 echo "source $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-IntelArc-ArchLinux_env/bin/activate" >> $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.sh
 echo "export LD_LIBRARY_PATH=$pdirectory/roopUL-IntelArc-ArchLinux/roopUL-IntelArc-ArchLinux_env/lib" >> $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.sh
-echo "python $pdirectory/roopUL-IntelArc-ArchLinux/run.py" >> $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.sh
+echo "python $pdirectory/roopUL-IntelArc-ArchLinux/run.py --execution-provider openvino" >> $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.sh
 echo "" >> $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.sh
 echo "#This file can be copied and the final python command can be modified with any roopUL arguments (like --preset realistic). Just add arguments after entry_with_update.py" >> $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.sh
 echo "" >> $pdirectory/roopUL-IntelArc-ArchLinux/roopUL-Start.sh
